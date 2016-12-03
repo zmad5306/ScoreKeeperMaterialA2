@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <span>ScoreKeeper</span>
+  <span class="example-fill-remaining-space"></span>
+  <span>
+    <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>more_vert</md-icon>
+    </button>
+    <md-menu #menu="mdMenu" x-position="before">
+        <button md-menu-item  routerLink="/game">
+          <md-icon>dashboard</md-icon>
+          <span>Game</span>
+        </button>
+        <button md-menu-item routerLink="/players">
+          <md-icon>face</md-icon>
+          <span>Players</span>
+        </button>
+        <button md-menu-item (click)="onNewGame()">
+          <md-icon>delete</md-icon>
+          <span>New Game</span>  
+        </button>
+    </md-menu>
+  </span>
+</md-toolbar>
+<router-outlet></router-outlet>

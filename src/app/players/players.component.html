@@ -1,0 +1,19 @@
+<md-list>
+  <md-list-item *ngFor="let player of players">
+    <span>{{player.name}}</span>
+    <span class="example-fill-remaining-space"></span>
+    <span>
+      <button md-icon-button (click)="onDelete(player)">
+          <md-icon>remove circle outline</md-icon>
+      </button>
+     </span>
+  </md-list-item>
+  <md-list-item *ngIf="player">
+    <md-input  md-line placeholder="name" [(ngModel)]="player.name"></md-input>
+    <p md-line>
+      <button md-raised-button color="primary" (click)="onSave()">Save</button>
+      <button md-raised-button color="warn" (click)="onCancelSave()">Cancel</button>
+    </p>
+  </md-list-item>
+</md-list>
+<button md-mini-fab (click)="onAdd()"><md-icon>add circle outline</md-icon></button>

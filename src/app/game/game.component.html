@@ -1,0 +1,11 @@
+<md-tab-group>
+  <md-tab *ngFor="let player of players">
+    <template md-tab-label>
+      {{player.name}}
+    </template>
+    <h1>{{player.name}}</h1>
+    <h1>{{player.score}}</h1>
+    <p><md-input type="number" placeholder="Score" [(ngModel)]="player.pointsToAdd"></md-input></p>
+    <p><button md-raised-button color="primary" (click)="onAdd(player)">Add Points</button></p>
+  </md-tab>
+</md-tab-group>
