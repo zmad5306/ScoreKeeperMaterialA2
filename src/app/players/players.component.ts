@@ -30,7 +30,6 @@ export class PlayersComponent implements OnInit {
   }
 
   onAdd(): void {
-    console.log('here!!!');
     this.player = {name: '', pointsToAdd: 0, score: 0};
   }
 
