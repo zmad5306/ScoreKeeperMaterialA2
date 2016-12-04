@@ -14,3 +14,6 @@
 /deep/ .md-tab-label {
     min-width: fit-content !important; 
 }
+/deep/ .md-tab-label {
+    line-height: 24px !important;
+}

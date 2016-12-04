@@ -1,7 +1,8 @@
 <md-tab-group [(selectedIndex)]="selectedIndex">
   <md-tab *ngFor="let player of players">
     <template md-tab-label>
-      {{player.name}}
+      <div>{{player.name}}</div>
+      <div>{{player.score}}</div>
     </template>
     <div (swipeleft)="swipeLeft()" (swiperight)="swipeRight()">
       <p class="lg">{{player.name}}</p>
