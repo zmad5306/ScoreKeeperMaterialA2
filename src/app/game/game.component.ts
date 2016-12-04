@@ -11,6 +11,7 @@ import { Player } from '../player';
 export class GameComponent implements OnInit {
 
   players: Player[];
+  selectedIndex: number = 0;
 
   constructor(private gameService: GameService) { }
 
@@ -27,6 +28,24 @@ export class GameComponent implements OnInit {
   onAdd(player: Player): void {
       player.score += player.pointsToAdd;
       player.pointsToAdd = 0;
+  }
+
+  swipeLeft() {
+    if (this.selectedIndex < this.players.length - 1) {
+      this.selectedIndex++;
+    }
+    else {
+      this.selectedIndex = 0;
+    }
+  }
+
+  swipeRight() {
+    if (this.selectedIndex > 0) {
+      this.selectedIndex--;
+    }
+    else {
+      this.selectedIndex = this.players.length - 1;
+    }
   }
 
 }

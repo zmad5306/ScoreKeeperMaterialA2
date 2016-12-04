@@ -1,11 +1,13 @@
-<md-tab-group>
+<md-tab-group [(selectedIndex)]="selectedIndex">
   <md-tab *ngFor="let player of players">
     <template md-tab-label>
       {{player.name}}
     </template>
-    <p class="lg">{{player.name}}</p>
-    <p class="lg">{{player.score}}</p>
-    <p><md-input type="number" placeholder="Score" [(ngModel)]="player.pointsToAdd" class="lg"></md-input></p>
-    <p><button class="lg pad" md-raised-button color="primary" (click)="onAdd(player)">Add Points</button></p>
+    <div (swipeleft)="swipeLeft()" (swiperight)="swipeRight()">
+      <p class="lg">{{player.name}}</p>
+      <p class="lg">{{player.score}}</p>
+      <p><md-input type="number" placeholder="Score" [(ngModel)]="player.pointsToAdd" class="lg"></md-input></p>
+      <p><button class="lg pad" md-raised-button color="primary" (click)="onAdd(player)">Add Points</button></p>
+    </div>
   </md-tab>
 </md-tab-group>
