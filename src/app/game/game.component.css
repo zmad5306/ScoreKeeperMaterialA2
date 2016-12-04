@@ -4,3 +4,7 @@
 .pad {
     padding: 10px;
 }
+/deep/ .md-tab-header {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+} 
