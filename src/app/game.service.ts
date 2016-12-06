@@ -3,11 +3,11 @@ import { Injectable } from '@angular/core';
 import { Player } from './player';
 
 const players: Player[] = [
-  { name: 'Bob', score: 100, pointsToAdd: 0 },
-  { name: 'Sue', score: 200, pointsToAdd: 0 },
-  { name: 'Travis', score: 300, pointsToAdd: 0 },
-  { name: 'Jenny', score: 400, pointsToAdd: 0 },
-  { name: 'William', score: 500, pointsToAdd: 0 }
+  { name: 'Bob', score: 100},
+  { name: 'Sue', score: 200},
+  { name: 'Travis', score: 300},
+  { name: 'Jenny', score: 400},
+  { name: 'William', score: 500}
 ]
 
 @Injectable()

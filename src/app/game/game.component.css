@@ -4,6 +4,12 @@
 .pad {
     padding: 10px;
 }
+.wide {
+    width: 100%;
+}
+.center {
+    text-align: center;
+}
 /deep/ .md-tab-header {
     overflow-x: auto !important;
     overflow-y: hidden !important;
@@ -16,4 +22,7 @@
 }
 /deep/ .md-tab-label {
     line-height: 24px !important;
+}
+/deep/ .md-input-element {
+    text-align: center !important;
 }

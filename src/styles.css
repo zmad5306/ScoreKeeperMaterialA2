@@ -5,6 +5,10 @@
   src: local('Material Icons'), local('MaterialIcons-Regular'), url(icons.woff2) format('woff2');
 }
 
+body {
+  margin: 0;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

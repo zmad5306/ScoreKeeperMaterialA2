@@ -43,7 +43,7 @@ export class PlayersComponent implements OnInit {
   }
 
   onAdd(): void {
-    this.player = {name: '', pointsToAdd: 0, score: 0};
+    this.player = {name: '', score: 0};
   }
 
   onSave(): void {
