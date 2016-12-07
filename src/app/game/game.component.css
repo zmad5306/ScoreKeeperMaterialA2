@@ -10,7 +10,7 @@
 .center {
     text-align: center;
 }
-@media (min-width: 600px) and (orientation: landscape){
+@media (min-width: 550px) and (orientation: landscape){
     .left {
         width: 50%;
         display: inline-block;
@@ -35,4 +35,7 @@
 }
 /deep/ .md-input-element {
     text-align: center !important;
+}
+/deep/ .md-input-underline {
+    text-align: left !important;
 }
