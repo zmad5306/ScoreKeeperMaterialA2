@@ -2,7 +2,7 @@
   flex: 1 1 auto;
 }
 .bottom-right {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 }

@@ -31,22 +31,22 @@ export class GameComponent implements OnInit {
       this.points = 0;
   }
 
-  swipeLeft() {
-    if (this.selectedIndex < this.players.length - 1) {
-      this.selectedIndex++;
-    }
-    else {
-      this.selectedIndex = 0;
-    }
-  }
+  // swipeLeft() {
+  //   if (this.selectedIndex < this.players.length - 1) {
+  //     this.selectedIndex++;
+  //   }
+  //   else {
+  //     this.selectedIndex = 0;
+  //   }
+  // }
 
-  swipeRight() {
-    if (this.selectedIndex > 0) {
-      this.selectedIndex--;
-    }
-    else {
-      this.selectedIndex = this.players.length - 1;
-    }
-  }
+  // swipeRight() {
+  //   if (this.selectedIndex > 0) {
+  //     this.selectedIndex--;
+  //   }
+  //   else {
+  //     this.selectedIndex = this.players.length - 1;
+  //   }
+  // }
 
 }

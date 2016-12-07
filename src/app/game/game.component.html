@@ -4,11 +4,16 @@
       <div>{{player.name}}</div>
       <div>{{player.score}}</div>
     </template>
-    <div (swipeleft)="swipeLeft()" (swiperight)="swipeRight()">
-      <p class="lg wide center">{{player.name}}</p>
-      <p class="lg wide center">{{player.score}}</p>
-      <p><md-input type="number" placeholder="Points" [(ngModel)]="points" class="lg center"></md-input></p>
-      <p><button class="lg pad wide" md-raised-button color="primary" (click)="onAdd(player)">Add Points</button></p>
+    <!--<div (swipeleft)="swipeLeft()" (swiperight)="swipeRight()">-->
+    <div>
+      <div class="left">
+        <p class="lg wide center">{{player.name}}</p>
+        <p class="lg wide center">{{player.score}}</p>
+      </div>
+      <div class="right">
+        <p><md-input type="number" [(ngModel)]="points" class="lg center wide"></md-input></p>
+        <p><button class="lg pad wide" md-raised-button color="primary" (click)="onAdd(player)">Add Points</button></p>
+      </div>
     </div>
   </md-tab>
 </md-tab-group>
