@@ -20,16 +20,6 @@
         float: right;
     }
 }
-/deep/ .md-tab-header {
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-}
-/deep/ .md-tab-header::-webkit-scrollbar { 
-  display: none;
-}
-/deep/ .md-tab-label {
-    min-width: fit-content !important; 
-}
 /deep/ .md-tab-label {
     line-height: 24px !important;
 }
