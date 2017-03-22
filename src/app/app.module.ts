@@ -30,7 +30,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

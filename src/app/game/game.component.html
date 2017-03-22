@@ -11,7 +11,7 @@
         <p class="lg wide center">{{player.score}}</p>
       </div>
       <div class="right">
-        <p><md-input type="number" [(ngModel)]="points" class="lg center wide"></md-input></p>
+        <p><md-input-container><input type="number" [(ngModel)]="points" mdInput class="lg center wide"></md-input-container></p>
         <p><button class="lg pad wide" md-raised-button color="primary" (click)="onAdd(player)">Add Points</button></p>
       </div>
     </div>

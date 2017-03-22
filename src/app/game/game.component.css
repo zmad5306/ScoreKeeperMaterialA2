@@ -20,12 +20,12 @@
         float: right;
     }
 }
-/deep/ .md-tab-label {
+/deep/ .mat-tab-label {
     line-height: 24px !important;
 }
-/deep/ .md-input-element {
+/deep/ .mat-input-element {
     text-align: center !important;
 }
-/deep/ .md-input-underline {
+/deep/ .mat-input-underline {
     text-align: left !important;
 }

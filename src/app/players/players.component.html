@@ -9,7 +9,9 @@
      </span>
   </md-list-item>
   <md-list-item *ngIf="player">
-    <md-input  md-line placeholder="name" [(ngModel)]="player.name"></md-input>
+    <md-input-container>
+      <input md-line placeholder="name" mdInput [(ngModel)]="player.name">
+    </md-input-container>
     <p md-line>
       <button md-raised-button color="primary" (click)="onSave()">Save</button>
       <button md-raised-button color="warn" (click)="onCancelSave()">Cancel</button>
