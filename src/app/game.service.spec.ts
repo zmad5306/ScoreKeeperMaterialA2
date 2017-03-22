@@ -6,7 +6,7 @@ import { GameService } from './game.service';
 describe('GameService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [TestBed]
+      providers: [TestBed, GameService]
     });
   });
 

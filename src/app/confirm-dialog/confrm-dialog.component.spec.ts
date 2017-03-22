@@ -5,13 +5,26 @@ import { DebugElement } from '@angular/core';
 
 import { ConfirmDialogComponent } from './confirm-dialog.component';
 
-describe('AreYouSureDialogComponent', () => {
+import { MdDialogModule, MdDialog, MdDialogConfig, MdDialogRef, MdIconModule, OverlayContainer } from '@angular/material';
+
+class MdDialogRefSpy {
+
+}
+
+describe('ConfirmDialogComponent', () => {
   let component: ConfirmDialogComponent;
   let fixture: ComponentFixture<ConfirmDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ConfirmDialogComponent ]
+    })
+    .overrideComponent(ConfirmDialogComponent, {
+      set: {
+        providers: [
+          { provide: MdDialogRef, useClass: MdDialogRefSpy}
+        ]
+      }
     })
     .compileComponents();
   }));

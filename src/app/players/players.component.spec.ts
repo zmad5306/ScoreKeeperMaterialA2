@@ -2,8 +2,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { MaterialModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 import { PlayersComponent } from './players.component';
+import { GameService } from '../game.service';
 
 describe('PlayersComponent', () => {
   let component: PlayersComponent;
@@ -11,7 +14,19 @@ describe('PlayersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PlayersComponent ]
+      declarations: [ PlayersComponent ],
+      imports: [
+        MaterialModule,
+
+        FormsModule
+      ]
+    })
+    .overrideComponent(PlayersComponent, {
+      set: {
+        providers: [
+          { provide: GameService, useClass: GameService}
+        ]
+      }
     })
     .compileComponents();
   }));
